@@ -21,6 +21,9 @@ public class TestStringUtils {
 		int res4 = StringUtils.levenshteinDistance("aviron", "avion");
 		assertEquals(res4, 1);
 		
+		int res5 = StringUtils.levenshteinDistance("aviron", "avio");
+		assertEquals(res5,2);
+		
 	}
 	
 	@Test (expected = NullPointerException.class)
